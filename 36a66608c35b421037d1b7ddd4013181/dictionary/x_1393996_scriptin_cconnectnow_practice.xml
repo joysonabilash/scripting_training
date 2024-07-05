@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c147e68cc35b421037d1b7ddd40131f6" label="CConnectnow Practice" max_length="40" name="x_1393996_scriptin_cconnectnow_practice" type="collection">
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element dependent_value="3" inactive_on_update="false" label="Tamilnadu" sequence="3" value="Tamilnadu"/>
+                <element dependent_value="1" inactive_on_update="false" label="Andhra Pradesh" sequence="1" value="Andhra Pradesh"/>
+                <element dependent_value="2" inactive_on_update="false" label="Telengana" sequence="2" value="Telengana"/>
+                <element dependent_value="4" inactive_on_update="false" label="Maharastra" sequence="4" value="Maharastra"/>
+            </choice>
+        </element>
+        <element label="Reference URL" max_length="1024" name="reference_url" type="url"/>
+        <element attributes="encode_utf8=false" label="Name" max_length="32" name="name" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Estimated Cost" max_length="20" name="amoun_required" type="currency"/>
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Resolution" max_length="255" name="new_field_1" type="journal_input"/>
+        <element label="Notes" max_length="2000" name="notes" type="string"/>
+        <element label="Email" mandatory="true" max_length="100" name="email" type="string"/>
+        <element label="Additional Information" max_length="65536" name="additional_information" type="html"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;if()&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" dependent="state" dependent_on_field="state" label="District" max_length="40" name="district" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Maharastra" inactive_on_update="false" label="Pune" sequence="13" value="Pune"/>
+                <element dependent_value="Maharastra" inactive_on_update="false" label="Nashik" sequence="16" value="Nashik"/>
+                <element dependent_value="Andhra Pradesh" inactive_on_update="false" label="Nellore" sequence="7" value="Nellore"/>
+                <element dependent_value="Telengana" inactive_on_update="false" label="Adilabad" sequence="12" value="Adilabad"/>
+                <element dependent_value="Maharastra" inactive_on_update="false" label="Mumbai" sequence="15" value="Mumbai"/>
+                <element dependent_value="Tamilnadu" inactive_on_update="false" label="Tirunelveli" sequence="2" value="Tirunelveli"/>
+                <element dependent_value="Tamilnadu" inactive_on_update="false" label="Chennai" sequence="1" value="Chennai"/>
+                <element dependent_value="Telengana" inactive_on_update="false" label="Hyderabad" sequence="9" value="Hyderabad"/>
+                <element dependent_value="Telengana" inactive_on_update="false" label="Nizamabad" sequence="11" value="Nizamabad"/>
+                <element dependent_value="Tamilnadu" inactive_on_update="false" label="Coimbatore" sequence="4" value="Coimbatore"/>
+                <element dependent_value="Andhra Pradesh" inactive_on_update="false" label="Visakhapatnam" sequence="5" value="Visakhapatnam"/>
+                <element dependent_value="Maharastra" inactive_on_update="false" label="Nagpur" sequence="14" value="Nagpur"/>
+                <element dependent_value="Telengana" inactive_on_update="false" label="Warangal" sequence="10" value="Warangal"/>
+                <element dependent_value="Andhra Pradesh" inactive_on_update="false" label="Ongole" sequence="8" value="Ongole"/>
+                <element dependent_value="Andhra Pradesh" inactive_on_update="false" label="Vijayawada" sequence="6" value="Vijayawada"/>
+                <element dependent_value="Tamilnadu" inactive_on_update="false" label="Trichy" sequence="3" value="Trichy"/>
+            </choice>
+        </element>
+        <element label="Domain" max_length="32" name="domain" type="domain_id"/>
+        <element attributes="format=none" label="Phone Number" max_length="10" name="phone_number" type="integer"/>
+        <index name="index">
+            <element name="domain"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+    </element>
+</database>

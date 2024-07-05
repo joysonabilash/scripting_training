@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>email</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name/>
+        <order/>
+        <script><![CDATA[function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
+  var saveAndClose = true;
+ //Type appropriate comment here, and begin script below
+ var sections = g_form.getSections();
+	sections[1].show();
+ callback(saveAndClose); 
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 07:21:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ac59b2c8c35f421037d1b7ddd40131b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+        <sys_update_name>sys_script_client_ac59b2c8c35f421037d1b7ddd40131b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 07:21:51</sys_updated_on>
+        <table>x_1393996_scriptin_cconnectnow_practice</table>
+        <type>onCellEdit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</application>
+        <file_path/>
+        <instance_id>b02dbff0eb8742d856eafddacad0cd76</instance_id>
+        <instance_name>dev275709</instance_name>
+        <name>sys_script_client_ac59b2c8c35f421037d1b7ddd40131b6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;email&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name/&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
+  var saveAndClose = true;
+ //Type appropriate comment here, and begin script below
+ var sections = g_form.getSections();
+	sections[1].show();
+ callback(saveAndClose); 
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-05 07:21:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ac59b2c8c35f421037d1b7ddd40131b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Scripting_Training" source="x_1393996_scriptin"&gt;36a66608c35b421037d1b7ddd4013181&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Scripting_Training"&gt;36a66608c35b421037d1b7ddd4013181&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_ac59b2c8c35f421037d1b7ddd40131b6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-05 07:21:51&lt;/sys_updated_on&gt;&lt;table&gt;x_1393996_scriptin_cconnectnow_practice&lt;/table&gt;&lt;type&gt;onCellEdit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>843889913</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>03a66608c35b421037d1b7ddd4013186</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 07:21:51</sys_created_on>
+        <sys_id>7669fe88c35f421037d1b7ddd40131b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19081c553190000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 07:21:51</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>7a69fe88345f42100f6dc2509044a7b7</update_guid>
+        <update_guid_history>7a69fe88345f42100f6dc2509044a7b7:843889913</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 07:29:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0942c2421cff43238a5b299ae7956801</sys_id>
+        <sys_metadata>ac59b2c8c35f421037d1b7ddd40131b6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+        <sys_parent display_value="CConnectnow Practice">c147e68cc35b421037d1b7ddd40131f6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+        <sys_scope_delete display_value="">1542a3db4815427ab5df364d788c6759</sys_scope_delete>
+        <sys_update_name>sys_script_client_ac59b2c8c35f421037d1b7ddd40131b6</sys_update_name>
+        <sys_update_version display_value="sys_script_client_ac59b2c8c35f421037d1b7ddd40131b6">7669fe88c35f421037d1b7ddd40131b8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 07:29:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

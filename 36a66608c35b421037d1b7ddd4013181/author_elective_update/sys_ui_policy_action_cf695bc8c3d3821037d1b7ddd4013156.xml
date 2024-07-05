@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field>phone_number</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 09:41:56</sys_created_on>
+        <sys_id>cf695bc8c3d3821037d1b7ddd4013156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>phone_number</sys_name>
+        <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+        <sys_update_name>sys_ui_policy_action_cf695bc8c3d3821037d1b7ddd4013156</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 09:41:56</sys_updated_on>
+        <table>x_1393996_scriptin_cconnectnow_practice</table>
+        <ui_policy display_value="Check Valid Phone Number">619697c4c3d3821037d1b7ddd40131e3</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=cf695bc8c3d3821037d1b7ddd4013156"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</application>
+        <file_path/>
+        <instance_id>b02dbff0eb8742d856eafddacad0cd76</instance_id>
+        <instance_name>dev275709</instance_name>
+        <name>sys_ui_policy_action_cf695bc8c3d3821037d1b7ddd4013156</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>true</cleared><disabled>ignore</disabled><field>phone_number</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-05 09:41:56</sys_created_on><sys_id>cf695bc8c3d3821037d1b7ddd4013156</sys_id><sys_mod_count>0</sys_mod_count><sys_name>phone_number</sys_name><sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package><sys_policy/><sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope><sys_update_name>sys_ui_policy_action_cf695bc8c3d3821037d1b7ddd4013156</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-05 09:41:56</sys_updated_on><table>x_1393996_scriptin_cconnectnow_practice</table><ui_policy display_value="Check Valid Phone Number">619697c4c3d3821037d1b7ddd40131e3</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=cf695bc8c3d3821037d1b7ddd4013156"/></record_update>]]></payload>
+        <payload_hash>-1437518279</payload_hash>
+        <record_name>phone_number</record_name>
+        <reverted_from/>
+        <source>03a66608c35b421037d1b7ddd4013186</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 09:41:56</sys_created_on>
+        <sys_id>ba795f4cc3d3821037d1b7ddd4013183</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190824595230000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 09:41:56</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>be795f4ccad3821015dacf0748db4f82</update_guid>
+        <update_guid_history>be795f4ccad3821015dacf0748db4f82:-1437518279</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 09:42:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>829a88c0712c444096ba4d4ff6a4f651</sys_id>
+        <sys_metadata>cf695bc8c3d3821037d1b7ddd4013156</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>phone_number</sys_name>
+        <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+        <sys_parent display_value="Check Valid Phone Number">619697c4c3d3821037d1b7ddd40131e3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+        <sys_scope_delete display_value="">1542a3db4815427ab5df364d788c6759</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_cf695bc8c3d3821037d1b7ddd4013156</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_cf695bc8c3d3821037d1b7ddd4013156">ba795f4cc3d3821037d1b7ddd4013183</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 09:42:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

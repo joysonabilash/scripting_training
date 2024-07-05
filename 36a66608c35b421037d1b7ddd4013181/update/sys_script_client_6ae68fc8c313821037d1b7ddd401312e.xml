@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Show an alert at submit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+
+
+var alertText = "Name : "+g_user.firstName+ " "+g_user.lastName+"\n";
+alertText = alertText + "Phone Number : "+g_form.getValue("phone_number")+"\n";
+alertText = alertText + "Email : "+g_form.getValue("email")+"\n";
+alertText = alertText + "State : "+g_form.getValue("state")+"\n";
+alertText = alertText + "District : "+g_form.getValue("district")+"\n";
+alertText = alertText + "Description : "+(g_form.getValue("description").trim.length>0?g_form.getValue("description"):"Above data is correct")+"\n";
+
+   alert(alertText);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-05 08:22:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6ae68fc8c313821037d1b7ddd401312e</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Show an alert at submit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+        <sys_update_name>sys_script_client_6ae68fc8c313821037d1b7ddd401312e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-05 11:51:55</sys_updated_on>
+        <table>x_1393996_scriptin_cconnectnow_practice</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
