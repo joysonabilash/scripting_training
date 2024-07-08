@@ -3,7 +3,7 @@
         <active>false</active>
         <applies_extended>false</applies_extended>
         <condition/>
-        <description/>
+        <description>Not in Use</description>
         <field/>
         <global>true</global>
         <isolate_script>true</isolate_script>
@@ -19,15 +19,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6ae68fc8c313821037d1b7ddd401312e</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>Show an alert at submit</sys_name>
         <sys_overrides/>
         <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
         <sys_policy/>
         <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
         <sys_update_name>sys_script_client_6ae68fc8c313821037d1b7ddd401312e</sys_update_name>
-        <sys_updated_by>Admin</sys_updated_by>
-        <sys_updated_on>2024-07-08 16:41:48</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-08 20:14:14</sys_updated_on>
         <table>x_1393996_scriptin_cconnectnow_practice</table>
         <type>onSubmit</type>
         <ui_type>0</ui_type>

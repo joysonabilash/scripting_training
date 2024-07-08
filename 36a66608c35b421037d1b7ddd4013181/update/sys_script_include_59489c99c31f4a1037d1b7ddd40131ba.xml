@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>package_private</access>
-        <active>true</active>
+        <active>false</active>
         <api_name>x_1393996_scriptin.CreateRecord_Incident</api_name>
         <caller_access/>
         <client_callable>true</client_callable>
-        <description/>
+        <description>Not in Use</description>
         <name>CreateRecord_Incident</name>
         <script><![CDATA[var CreateRecord_Incident = Class.create();
 CreateRecord_Incident.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
@@ -48,13 +48,13 @@ CreateRecord_Incident.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_created_by>Admin</sys_created_by>
         <sys_created_on>2024-07-08 16:58:26</sys_created_on>
         <sys_id>59489c99c31f4a1037d1b7ddd40131ba</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>CreateRecord_Incident</sys_name>
         <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
         <sys_update_name>sys_script_include_59489c99c31f4a1037d1b7ddd40131ba</sys_update_name>
-        <sys_updated_by>Admin</sys_updated_by>
-        <sys_updated_on>2024-07-08 18:34:09</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-08 20:09:54</sys_updated_on>
     </sys_script_include>
 </record_update>

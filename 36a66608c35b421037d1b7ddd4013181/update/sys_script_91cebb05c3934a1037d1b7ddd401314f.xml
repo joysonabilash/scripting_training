@@ -30,8 +30,12 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 if (current.state == 6 || current.state == 106 || current.state == 4){
 	var ccnow = new GlideRecord("x_1393996_scriptin_cconnectnow_practice");
-	ccnow.get("related_incident",current.sys_id);
-	ccnow.deleteRecord();
+	ccnow.addQuery("related_incident","=",current.sys_id);
+	ccnow.query();
+	//ccnow.get("related_incident",current.sys_id);
+	while(ccnow.next()){
+		ccnow.deleteRecord();
+	}
 }
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -40,15 +44,15 @@ if (current.state == 6 || current.state == 106 || current.state == 4){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>91cebb05c3934a1037d1b7ddd401314f</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Delete Resolved Record in CConnectNow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
         <sys_policy/>
         <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
         <sys_update_name>sys_script_91cebb05c3934a1037d1b7ddd401314f</sys_update_name>
-        <sys_updated_by>Admin</sys_updated_by>
-        <sys_updated_on>2024-07-08 16:40:03</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-08 20:23:14</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
