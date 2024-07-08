@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="related_incident" label="Related Incident" language="en" table="x_1393996_scriptin_cconnectnow_practice">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>related_incident</element>
+            <help/>
+            <hint/>
+            <label>Related Incident</label>
+            <language>en</language>
+            <name>x_1393996_scriptin_cconnectnow_practice</name>
+            <plural>Related Incidents</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-07-08 06:20:42</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Related Incident</sys_name>
+            <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+            <sys_update_name>sys_documentation_x_1393996_scriptin_cconnectnow_practice_related_incident_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-07-08 06:20:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

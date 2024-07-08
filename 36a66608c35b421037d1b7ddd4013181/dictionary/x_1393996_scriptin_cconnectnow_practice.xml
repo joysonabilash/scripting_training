@@ -11,6 +11,7 @@
         <element label="Reference URL" max_length="1024" name="reference_url" type="url"/>
         <element attributes="encode_utf8=false" label="Name" max_length="32" name="name" read_only="true" reference="sys_user" type="reference"/>
         <element label="Estimated Cost" max_length="20" name="amoun_required" type="currency"/>
+        <element label="Incident Short Description" max_length="400" name="incident_short_description" read_only="true" reference_qual="null" reference_qual_condition="null" type="string"/>
         <element label="Description" max_length="1000" name="description" type="string"/>
         <element label="Resolution" max_length="255" name="new_field_1" type="journal_input"/>
         <element label="Notes" max_length="2000" name="notes" type="string"/>
@@ -38,11 +39,15 @@
         </element>
         <element label="Domain" max_length="32" name="domain" type="domain_id"/>
         <element attributes="format=none" label="Phone Number" max_length="10" name="phone_number" type="integer"/>
+        <element label="Related Incident" mandatory="true" max_length="32" name="related_incident" reference="incident" reference_qual="state=1^EQ" reference_qual_condition="state=1^EQ" type="reference"/>
         <index name="index">
             <element name="domain"/>
         </index>
         <index name="index2">
             <element name="name"/>
+        </index>
+        <index name="index3">
+            <element name="related_incident"/>
         </index>
     </element>
 </database>

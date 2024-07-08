@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1393996_scriptin.Update_Incident_Short_Description</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Update_Incident_Short_Description</name>
+        <script><![CDATA[var Update_Incident_Short_Description = Class.create();
+Update_Incident_Short_Description.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getIncidentDetails:function(){
+
+		var incident_reference = this.getParameter('sys_id');
+
+		var incident = new GlideRecord('incident');
+		obj = {};
+
+		if(incident.get(incident_reference))
+		{
+			obj.short_description = incident.getValue("short_description");
+		}
+		
+		return JSON.stringify(obj);
+	},
+    type: 'Update_Incident_Short_Description'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-08 08:14:48</sys_created_on>
+        <sys_id>9a40ee41c313c61037d1b7ddd401314a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Update_Incident_Short_Description</sys_name>
+        <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+        <sys_update_name>sys_script_include_9a40ee41c313c61037d1b7ddd401314a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-08 08:29:54</sys_updated_on>
+    </sys_script_include>
+</record_update>

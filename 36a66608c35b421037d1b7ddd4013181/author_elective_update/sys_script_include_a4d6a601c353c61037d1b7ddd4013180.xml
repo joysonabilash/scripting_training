@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1393996_scriptin.Get_Incident_Number</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Get_Incident_Number</name>
+        <script><![CDATA[var Get_Incident_Number = Class.create();
+Get_Incident_Number.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getIncidentNumber:function(){
+
+		var incident_reference = this.getParameter('sys_id');
+
+		var incident = new GlideRecord('incident');
+		obj = {};
+
+		if(incident.get(incident_reference))
+		{
+			obj.number = incident.getValue("number");
+		}
+		
+		return JSON.stringify(obj);
+
+	},
+
+    type: 'Get_Incident_Number'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-08 08:36:53</sys_created_on>
+        <sys_id>a4d6a601c353c61037d1b7ddd4013180</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Get_Incident_Number</sys_name>
+        <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+        <sys_update_name>sys_script_include_a4d6a601c353c61037d1b7ddd4013180</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-08 10:21:16</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</application>
+        <file_path/>
+        <instance_id>b02dbff0eb8742d856eafddacad0cd76</instance_id>
+        <instance_name>dev275709</instance_name>
+        <name>sys_script_include_a4d6a601c353c61037d1b7ddd4013180</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1393996_scriptin.Get_Incident_Number&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;Get_Incident_Number&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var Get_Incident_Number = Class.create();
+Get_Incident_Number.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getIncidentNumber:function(){
+
+		var incident_reference = this.getParameter('sys_id');
+
+		var incident = new GlideRecord('incident');
+		obj = {};
+
+		if(incident.get(incident_reference))
+		{
+			obj.number = incident.getValue("number");
+		}
+		
+		return JSON.stringify(obj);
+
+	},
+
+    type: 'Get_Incident_Number'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-08 08:36:53&lt;/sys_created_on&gt;&lt;sys_id&gt;a4d6a601c353c61037d1b7ddd4013180&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get_Incident_Number&lt;/sys_name&gt;&lt;sys_package display_value="Scripting_Training" source="x_1393996_scriptin"&gt;36a66608c35b421037d1b7ddd4013181&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Scripting_Training"&gt;36a66608c35b421037d1b7ddd4013181&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a4d6a601c353c61037d1b7ddd4013180&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-08 10:21:16&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-613625050</payload_hash>
+        <record_name>Get_Incident_Number</record_name>
+        <reverted_from/>
+        <source>d52959d0c353061037d1b7ddd40131f5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-08 10:21:16</sys_created_on>
+        <sys_id>d44fb28dc3d7c61037d1b7ddd40131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19091dcabba0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-08 10:21:16</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>5c4fb28d42d7c6102adcb178464efddb</update_guid>
+        <update_guid_history>5c4fb28d42d7c6102adcb178464efddb:-613625050,666d624da2d3c610be9a1ea11ec04e5a:2053121138,2b57a6c9e553c61061b63617854997cf:-1919000094</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-08 11:10:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>4991b9d7a1fe44029ba1b0b04e0b0a64</sys_id>
+        <sys_metadata>a4d6a601c353c61037d1b7ddd4013180</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get_Incident_Number</sys_name>
+        <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+        <sys_scope_delete display_value="">1542a3db4815427ab5df364d788c6759</sys_scope_delete>
+        <sys_update_name>sys_script_include_a4d6a601c353c61037d1b7ddd4013180</sys_update_name>
+        <sys_update_version display_value="sys_script_include_a4d6a601c353c61037d1b7ddd4013180">d44fb28dc3d7c61037d1b7ddd40131dc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-08 11:10:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
