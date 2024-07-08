@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CreateRecord : Incident</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   var glideAjax = new GlideAjax("x_1393996_scriptin.CreateRecord_Incident");
+   glideAjax.addParam('sysparm_name','createNewRecord');
+   glideAjax.addParam('name',g_form.getValue('caller_id'));
+   glideAjax.addParam('description',g_form.getValue('description'));
+   glideAjax.addParam('related_incident',g_form.getValue('number'));
+   glideAjax.addParam('incident_short_description',g_form.getValue('short_description'));
+   glideAjax.getXML(getResponse);
+
+   function getResponse(response){
+	var res=JSON.parse(response);
+   }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Admin</sys_created_by>
+        <sys_created_on>2024-07-08 17:17:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>435ad899c31f4a1037d1b7ddd40131e7</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>CreateRecord : Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
+        <sys_update_name>sys_script_client_435ad899c31f4a1037d1b7ddd40131e7</sys_update_name>
+        <sys_updated_by>Admin</sys_updated_by>
+        <sys_updated_on>2024-07-08 18:46:48</sys_updated_on>
+        <table>incident</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

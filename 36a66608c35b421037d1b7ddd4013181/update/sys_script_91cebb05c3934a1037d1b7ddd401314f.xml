@@ -5,21 +5,21 @@
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_1393996_scriptin_cconnectnow_practice</collection>
+        <collection>incident</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Update Description</name>
-        <order>1</order>
+        <name>Delete Resolved Record in CConnectNow</name>
+        <order>100</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -27,31 +27,30 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {	
-	var incident = new GlideRecord('incident');
-	incident.get(current.related_incident);
-	var res = incident.number.toString();
-	if(res.toString().trim().length>0){
-		current.description = (current.description.toString().trim().length==0?"Above fields are correct - ":current.description+" - ")+res;
-	}
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+if (current.state == 6 || current.state == 106 || current.state == 4){
+	var ccnow = new GlideRecord("x_1393996_scriptin_cconnectnow_practice");
+	ccnow.get("related_incident",current.sys_id);
+	ccnow.deleteRecord();
+}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-08 09:14:50</sys_created_on>
+        <sys_created_by>Admin</sys_created_by>
+        <sys_created_on>2024-07-08 14:59:37</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0f8feecdc3d3c61037d1b7ddd4013198</sys_id>
-        <sys_mod_count>66</sys_mod_count>
-        <sys_name>Update Description</sys_name>
+        <sys_id>91cebb05c3934a1037d1b7ddd401314f</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Delete Resolved Record in CConnectNow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Scripting_Training" source="x_1393996_scriptin">36a66608c35b421037d1b7ddd4013181</sys_package>
         <sys_policy/>
         <sys_scope display_value="Scripting_Training">36a66608c35b421037d1b7ddd4013181</sys_scope>
-        <sys_update_name>sys_script_0f8feecdc3d3c61037d1b7ddd4013198</sys_update_name>
+        <sys_update_name>sys_script_91cebb05c3934a1037d1b7ddd401314f</sys_update_name>
         <sys_updated_by>Admin</sys_updated_by>
-        <sys_updated_on>2024-07-08 19:15:33</sys_updated_on>
+        <sys_updated_on>2024-07-08 16:40:03</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=0f8feecdc3d3c61037d1b7ddd4013198"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=91cebb05c3934a1037d1b7ddd401314f"/>
 </record_update>
